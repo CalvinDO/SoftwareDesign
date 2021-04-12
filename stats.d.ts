@@ -1,10 +1,14 @@
 namespace SoftwareDesign {
     
     class Stats {
-        private userId: number;
-        private playedQuizzes: number;
-        private anweredQuestions: number;
-        private correctAnswers: number;
+        private _userId: number;
+        
+
+        private _playedQuizzes: number;
+        private _anweredQuestions: number;
+        private _correctAnswers: number;
+
+        constructor (_userId: number, _playedQuizzes: number, _anweredQuestions: number, _correctAnswers: number);
 
         public getPercentage(correctAnswers, answeredQuestions): number;
     }
