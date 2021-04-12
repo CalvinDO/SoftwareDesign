@@ -1,7 +1,7 @@
 namespace SoftwareDesign {
     export class MultipleChoice {
 
-        private options: multipleChoiceOption[]
+        private options: MultipleChoiceOption[]
         public addOption(): void
     }
 }

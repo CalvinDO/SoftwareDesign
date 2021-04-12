@@ -7,7 +7,7 @@ namespace SoftwareDesign {
 
 
         public playQuiz(): void;
-        public showStats(userId): stats[];
+        public showStats(userId): Stats[];
         public signUp(): void;
         public logIn(): Boolean;
     }
