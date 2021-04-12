@@ -1,7 +1,11 @@
 namespace SoftwareDesign {
     export class Quiz {
 
-      
+        //---------------------------------------------------
+        //------------------VARIABLES------------------------
+        //---------------------------------------------------
+        
+
         private _public: boolean
         public get public(): boolean {
             return this._public
@@ -36,6 +40,9 @@ namespace SoftwareDesign {
             this._userId = value
         }
 
+
+        constructor(_public: boolean, _title: string, _questions: Question[], _userId: number);
+        
         //---------------------------------------------------
         //------------------METHODS--------------------------
         //---------------------------------------------------
