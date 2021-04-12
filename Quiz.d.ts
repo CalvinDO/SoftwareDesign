@@ -19,11 +19,11 @@ namespace SoftwareDesign {
         }
 
 
-        private _questions: question[]
-        public get questions(): question[] {
+        private _questions: Question[]
+        public get questions(): Question[] {
             return this._questions
         }
-        public set questions(value: question[]) {
+        public set questions(value: Question[]) {
             this._questions = value
         }
 
