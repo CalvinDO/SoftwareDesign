@@ -1,5 +1,5 @@
 namespace SoftwareDesign {
-    export class MultipleChoice {
+    export class MultipleChoiceOption {
 
         private option: String
         private correct: boolean

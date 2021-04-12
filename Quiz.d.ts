@@ -3,7 +3,7 @@ namespace SoftwareDesign {
 
         private public: Boolean
         private title: String
-        private questions: question[]
+        private questions: Question[]
         private userId: number
 
         public addQuestion(): void
