@@ -1,8 +1,8 @@
 "use strict";
 var SoftwareDesign;
 (function (SoftwareDesign) {
-    window.addEventListener("lod", init);
-    function init(_event) {
+    class User {
     }
+    SoftwareDesign.User = User;
 })(SoftwareDesign || (SoftwareDesign = {}));
 //# sourceMappingURL=Main.js.map
