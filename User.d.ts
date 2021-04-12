@@ -25,7 +25,9 @@ namespace SoftwareDesign {
             this._password = value;
         }
 
-        constructor(_userId: number, _userName: string, _password: string);
+        constructor(_userId: number, _userName: string, _password: string){
+            this._userId = _userId;
+        }
 
         public playQuiz(): void;
         public showStats(userId): Stats[];

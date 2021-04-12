@@ -42,12 +42,15 @@ namespace SoftwareDesign {
 
 
         constructor(_public: boolean, _title: string, _questions: Question[], _userId: number);
-        
+
         //---------------------------------------------------
         //------------------METHODS--------------------------
         //---------------------------------------------------
 
         public addQuestion(): void
+
+        //---------------------------------------------------
+
         public finishQuiz(): void
     }
 }
