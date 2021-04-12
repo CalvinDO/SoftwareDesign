@@ -1,6 +1,5 @@
-namespace SoftwareDesign {
-    
-    class Stats {
+namespace SoftwareDesign {    
+    export class Stats {
         private _userId: number;
         public get userId(): number {
             return this._userId;
@@ -19,12 +18,12 @@ namespace SoftwareDesign {
         }
 
 
-        private _anweredQuestions: number;
-        public get anweredQuestions(): number {
-            return this._anweredQuestions;
+        private _answeredQuestions: number;
+        public get answeredQuestions(): number {
+            return this._answeredQuestions;
         }
-        public set anweredQuestions(): number {
-            this._anweredQuestions = value;
+        public set answeredQuestions(): number {
+            this._answeredQuestions = value;
         }
 
 
@@ -35,8 +34,6 @@ namespace SoftwareDesign {
         public set correctAnswers(): number {
             this._correctAnswers = value;
         }
-
-
 
         constructor (_userId: number, _playedQuizzes: number, _anweredQuestions: number, _correctAnswers: number);
 
