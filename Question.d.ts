@@ -2,6 +2,6 @@ namespace SoftwareDesign {
     export class Question {
 
         private question: String
-        private type: questionType
+        private type: QuestionType
     }
 }
