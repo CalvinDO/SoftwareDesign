@@ -1,5 +1,5 @@
 namespace SoftwareDesign {
-    export class MultipleChoice {
+    export class NumberAnswer {
 
         private _answer: number;
         public get answer(): number {
