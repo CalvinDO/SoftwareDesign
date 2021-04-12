@@ -10,7 +10,8 @@ namespace SoftwareDesign {
         }
 
         constructor(_options: MultipleChoiceOption[]);
-        public addOption(): void
 
+
+        public addOption(): void
     }
 }
