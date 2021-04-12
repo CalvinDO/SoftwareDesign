@@ -40,6 +40,6 @@ namespace SoftwareDesign {
 
         constructor (_userId: number, _playedQuizzes: number, _anweredQuestions: number, _correctAnswers: number);
 
-        public getPercentage(correctAnswers, answeredQuestions): number;
+        public getPercentage(_correctAnswers, _answeredQuestions): number;
     }
 }
