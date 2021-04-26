@@ -6,9 +6,8 @@ namespace SoftwareDesign {
 
         constructor(_question: string, _answer: Answer[], _type: QuestionType);
 
-        public readAnswer(): void
-        public pollishAnswer(): void
-
+        public readAnswer(): void;
+        public pollishAnswer(): void;
     }
 
 }
