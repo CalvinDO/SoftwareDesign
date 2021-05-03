@@ -6,7 +6,6 @@ var SoftwareDesign;
             this._answer = _answer;
             this._isCorrect = _isCorrect;
         }
-        ;
     }
     SoftwareDesign.Answer = Answer;
 })(SoftwareDesign || (SoftwareDesign = {}));
