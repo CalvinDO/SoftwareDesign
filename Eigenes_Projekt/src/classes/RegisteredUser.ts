@@ -12,7 +12,7 @@ namespace SoftwareDesign {
         }
 
         public createQuiz(): Quiz {
-            let createdQuiz: Quiz;
+            let createdQuiz: Quiz = new Quiz("",[]);
 
             return createdQuiz;
         }
