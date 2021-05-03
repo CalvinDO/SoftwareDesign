@@ -1,8 +1,10 @@
 "use strict";
 var SoftwareDesign;
 (function (SoftwareDesign) {
-    class User {
-        constructor() {
+    class NullUser {
+        constructor(_name, _password) {
+            this._name = _name;
+            this._password = _password;
         }
         playQuiz() {
         }
@@ -13,6 +15,6 @@ var SoftwareDesign;
         writeUserAfterLogin() {
         }
     }
-    SoftwareDesign.User = User;
+    SoftwareDesign.NullUser = NullUser;
 })(SoftwareDesign || (SoftwareDesign = {}));
-//# sourceMappingURL=User.js.map
+//# sourceMappingURL=NullUser.js.map
