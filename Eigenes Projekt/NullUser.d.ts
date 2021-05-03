@@ -1,6 +1,6 @@
 namespace SoftwareDesign {
 
-    export class User {
+    export class NullUser {
        public _sex: string;
 
         constructor(_userId: number, _userName: string, _password: string){
