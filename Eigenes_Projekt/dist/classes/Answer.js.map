@@ -1,0 +1,1 @@
+{"version":3,"file":"Answer.js","sourceRoot":"","sources":["../../src/classes/Answer.ts"],"names":[],"mappings":";AAAA,IAAU,cAAc,CAWvB;AAXD,WAAU,cAAc;IACpB,MAAa,MAAM;QAIf,YAAY,OAAe,EAAE,UAAmB;YAC5C,IAAI,CAAC,OAAO,GAAC,OAAO,CAAC;YACrB,IAAI,CAAC,UAAU,GAAC,UAAU,CAAC;QAC/B,CAAC;QAAA,CAAC;KAEL;IATY,qBAAM,SASlB,CAAA;AACL,CAAC,EAXS,cAAc,KAAd,cAAc,QAWvB"}
