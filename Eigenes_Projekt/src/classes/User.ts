@@ -12,12 +12,15 @@ namespace SoftwareDesign {
         public playQuiz(): void {
 
         }
+
         public watchStats(): void {
 
         }
+
         public signIn(): void {
 
         }
+        
         public writeUserAfterLogin(): void {
 
         }
