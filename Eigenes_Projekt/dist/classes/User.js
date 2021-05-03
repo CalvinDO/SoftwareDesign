@@ -2,9 +2,7 @@
 var SoftwareDesign;
 (function (SoftwareDesign) {
     class User {
-        constructor(_userId, _userName, _password) {
-            this._sex = _userId;
-            this._userId = _userId;
+        constructor() {
         }
         playQuiz() {
         }
