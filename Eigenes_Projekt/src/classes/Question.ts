@@ -7,7 +7,7 @@ namespace SoftwareDesign {
         constructor(_question: string, _answer: Answer[], _type: QuestionType){
             this._question=_question;
             this._answer=_answer;
-            this._type=_answer;
+            this._type=_type;
         }
 
         public readAnswer(): void{
