@@ -1,11 +1,11 @@
 namespace SoftwareDesign {
 
     export class NullUser {
-       public _sex: string;
+        
+       public _name: string;
+       public _password: string;
 
-        constructor(_userId: number, _userName: string, _password: string){
-            this._userId = _userId;
-        }
+        constructor(_name: string, _password: string);
 
         public playQuiz(): void;
         public watchStats(): void;

@@ -2,10 +2,11 @@ namespace SoftwareDesign {
 
     export class RegisteredUser extends User {
 
-        public name: string;
-        public password: string;
+        public _name: string;
+        public _password: string;
 
-        constructor(_registerUserId: number, _quiz: Quiz[]);
+        constructor(_name: string, _password: string);
+        
         public createQuiz(): Quiz;
         public signIn(): void;
     }
