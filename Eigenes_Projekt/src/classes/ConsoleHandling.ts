@@ -21,8 +21,8 @@ class ConsoleHandling {
     return ConsoleHandling.instance
   }
 
-  public question(question: String) : Promise<String> {
-    let answer : String = "";
+  public question(question: string) : Promise<string> {
+    let answer : string = "";
     return new Promise((resolve) => {
       this.consoleLine.question(question.toString(), (_answer: string) => {
         answer = _answer;
@@ -31,7 +31,7 @@ class ConsoleHandling {
     });
   }
 
-  public showPossibilities(showPossibilities : String[], question: String) : Promise<String> {
+  public showPossibilities(showPossibilities : string[], question: string) : Promise<string> {
     this.consoleLine.write("\n")
     this.consoleLine.write("Functions you can use: ");
     this.consoleLine.write("\n\n");
