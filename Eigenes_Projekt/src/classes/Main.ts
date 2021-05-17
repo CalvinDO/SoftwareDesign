@@ -3,7 +3,12 @@ import ConsoleHandling from "./ConsoleHandling";
 
 namespace SoftwareDesign {
 
-    let accountDB: Map<string, string> = new Map<string, string>();
+    interface AccountDictonary {
+        [index: string]: string;
+    }
+
+    let accountDB: AccountDictonary = {}
+
 
 
     getFirstInput();
@@ -22,9 +27,12 @@ namespace SoftwareDesign {
                 let inputName: string = await ConsoleHandling.question("type in username: ");
                 let inputPassword: string = await ConsoleHandling.question("type in password: ");
 
-                accountDB.set(inputName, inputPassword);
+                accountDB[inputName] = inputPassword;
+
                 ConsoleHandling.printInput("congratulations! You got registered!")
 
+
+                console.log(JSON.stringify(accountDB));
                 break;
             default:
                 break;
