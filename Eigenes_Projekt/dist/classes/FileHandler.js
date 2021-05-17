@@ -9,6 +9,11 @@ const path_1 = __importDefault(require("path"));
 class FileHandler {
     constructor() {
     }
+    static getInstance() {
+        if (this.instance == null)
+            this.instance = new FileHandler();
+        return this.instance;
+    }
     readFile(pathToFile) {
         let jsonRaw = fs_1.default.readFileSync(path_1.default.resolve(__dirname, "../" + pathToFile));
         let json = JSON.parse(jsonRaw.toString());
@@ -25,4 +30,5 @@ class FileHandler {
     }
 }
 exports.FileHandler = FileHandler;
+exports.default = FileHandler.getInstance();
 //# sourceMappingURL=FileHandler.js.map

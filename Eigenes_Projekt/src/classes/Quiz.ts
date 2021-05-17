@@ -1,3 +1,4 @@
+
 namespace SoftwareDesign {
     export class Quiz {
         public _title: string;
@@ -12,7 +13,6 @@ namespace SoftwareDesign {
 
         }
         public createQuestions(): void {
-
         }
         public finishQuiz(): void {
 
