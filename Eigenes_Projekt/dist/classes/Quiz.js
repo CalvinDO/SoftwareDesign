@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var SoftwareDesign;
 (function (SoftwareDesign) {
     class Quiz {

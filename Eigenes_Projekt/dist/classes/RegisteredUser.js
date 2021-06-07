@@ -8,7 +8,7 @@ var SoftwareDesign;
             this._password = _password;
         }
         createQuiz() {
-            let createdQuiz = new Quiz("", []);
+            let createdQuiz = new SoftwareDesign.Quiz("", []);
             return createdQuiz;
         }
         signIn() {

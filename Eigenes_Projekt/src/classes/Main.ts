@@ -10,7 +10,6 @@ namespace SoftwareDesign {
     let accountDB: AccountDictonary = {}
 
 
-
     getFirstInput();
 
     async function getFirstInput(): Promise<void> {
