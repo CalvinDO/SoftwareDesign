@@ -1,24 +1,21 @@
-namespace SoftwareDesign {
+export class User {
 
-    export class User {
+    constructor() {
+    }
 
-        constructor() {
-        }
+    public playQuiz(): void {
 
-        public playQuiz(): void {
+    }
 
-        }
+    public watchStats(): void {
 
-        public watchStats(): void {
+    }
 
-        }
+    public signIn(): void {
 
-        public signIn(): void {
+    }
 
-        }
+    public writeUserAfterLogin(): void {
 
-        public writeUserAfterLogin(): void {
-
-        }
     }
 }

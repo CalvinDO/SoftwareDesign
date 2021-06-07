@@ -1,24 +1,26 @@
+import { Question } from "./Question";
 
-namespace SoftwareDesign {
-    export class Quiz {
-        public _title: string;
-        public _questions: Question[];
+export class Quiz {
 
-        constructor(_title: string, _questions: Question[]) {
-            this._title = _title;
-            this._questions = _questions;
-        }
+    public _title: string;
+    public _questions: Question[];
 
-        public writeStats(): void {
+    constructor(_title: string, _questions: Question[]) {
+        this._title = _title;
+        this._questions = _questions;
+    }
 
-        }
-        public createQuestions(): void {
-        }
-        public finishQuiz(): void {
+    public writeStats(): void {
 
-        }
-        public isQuizReady(): boolean {
-            return true;
-        }
+    }
+
+    public createQuestions(): void {
+    }
+
+    public finishQuiz(): void {
+
+    }
+    public isQuizReady(): boolean {
+        return true;
     }
 }

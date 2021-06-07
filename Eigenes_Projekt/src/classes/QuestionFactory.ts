@@ -1,21 +1,21 @@
-namespace SoftwareDesign {
-    export class QuestionFactory {
-        private static instance: QuestionFactory;
+import { QuestionType } from "./QuestionType";
+import { Question } from "./Question";
 
-        private constructor() {
-            
-        }
+export class QuestionFactory {
+    private static instance: QuestionFactory;
 
-        public static getInstance(): QuestionFactory {
-            if (this.instance == null)
-                this.instance = new QuestionFactory();
+    private constructor() {
 
-            return this.instance;
-        }
+    }
 
+    public static getInstance(): QuestionFactory {
+        if (this.instance == null)
+            this.instance = new QuestionFactory();
 
-        public createQuestion(_questionType: QuestionType): Question {
-            return new Question("", [], QuestionType.number);
-        }
+        return this.instance;
+    }
+
+    public createQuestion(_questionType: QuestionType): Question {
+        return new Question("", [], QuestionType.number);
     }
 }
