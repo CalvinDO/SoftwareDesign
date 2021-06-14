@@ -19,26 +19,50 @@ async function main(): Promise<void> {
 async function getFirstInput(): Promise<void> {
     let answer: string;
     answer = await ConsoleHandling.showPossibilities(["Select and play Quiz (Q)", "Sign in (S)", "Register (R)"], "What do you want to do?");
+    console.log();
     console.log(`${answer}`);
+    console.log();
 
     switch (answer.toUpperCase()) {
         case "Q":
             break;
         case "S":
+            console.log("You chose to Sign in!");
+            console.log();
+
+            signIn(await ConsoleHandling.question("type in username: "), await ConsoleHandling.question("type in password: "));
+            
             break;
         case "R":
-            let inputName: string = await ConsoleHandling.question("type in username: ");
-            let inputPassword: string = await ConsoleHandling.question("type in password: ");
+            console.log("You chose to Register!");
+            console.log();
 
-            accountDB[inputName] = new RegisteredUser(inputName, inputPassword);
+            register(await ConsoleHandling.question("type in username: "), await ConsoleHandling.question("type in password: "));
 
-
-            ConsoleHandling.printInput("congratulations! You got registered!")
-
-
-            console.log(JSON.stringify(accountDB));
             break;
         default:
+            console.log();
+            console.log("invalid input!");
             return;
     }
+}
+
+function signIn(_name: string, _password: string): void {
+    if (!accountDB[_name] || !(accountDB[_name]._password == _password)) {
+        console.log();
+        console.log("Username and / or password is invalid!");
+        return;
+    }
+    console.log();
+    console.log(`Hello ${_name}! Welcome back :)`);
+}
+
+function register(_name: string, _password: string): void {
+    if (accountDB[_name]) {
+        console.log();
+        console.log("Username already exists!");
+        return;
+    }
+    accountDB[_name] = new RegisteredUser(_name, _password);
+    console.log(JSON.stringify(accountDB));
 }
